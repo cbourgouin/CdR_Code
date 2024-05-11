@@ -1,4 +1,5 @@
 # Create your own Monorepo
+
 Code for the [Youtube video](https://youtu.be/pz4f9Q6VYZA) on how to create your own Monorepo using PNPM workspace, React, Vue, Node, Eslint, Prettier and Typescript
 
 ## The commands and code used throughout the video:
@@ -81,10 +82,17 @@ Add below plugins so that both Prettier and Eslint can do both of their jobs wit
 pnpm add -D eslint-config-prettier eslint-plugin-prettier
 ```
 
+Add in file **eslint.config.mjs**
+
 ```js
-module.exports = {
-  extends: [..., 'plugin:prettier/recommended'],
-}
+...
+import eslintConfigPrettier from "eslint-config-prettier";
+
+
+export default [
+  ...,
+  eslintConfigPrettier
+];
 ```
 
 ```sh

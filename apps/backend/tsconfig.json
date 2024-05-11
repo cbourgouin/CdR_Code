@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "allowJs": true,
     "moduleResolution": "Node",
-    "target": "ES2020",
     "sourceMap": true,
     "outDir": "dist",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true
+    "strict": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"]
 }
